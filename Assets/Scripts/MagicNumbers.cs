@@ -51,6 +51,7 @@ public class MagicNumbers : MonoBehaviour
     {
         _guess = (_max + _min) / 2;
         _attempt++;
+        
         LogMessage($"Ваше число равно: {_guess}?");
     }
 
@@ -61,8 +62,6 @@ public class MagicNumbers : MonoBehaviour
 
     private void RestartGame()
     {
-        _max = 1000;
-        _min = 0;
         _attempt = 0;
 
         LogMessage($"Привет! Вы играете в Magic Numbers. Загадайте число от {_min} до {_max}");
